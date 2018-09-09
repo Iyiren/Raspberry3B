@@ -5,8 +5,8 @@
 
 using namespace std;
 
-#define	Trig 27
-#define Echo 29
+#define   Trig 	 27
+#define   Echo 	 29
 
 // call this function to start a nanosecond-resolution timer
 struct timespec timer_start() {
