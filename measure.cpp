@@ -27,7 +27,10 @@ long timer_end(struct timespec start_time) {
 int main(void)
 {
 	if (-1 == wiringPiSetup())
+	{
 		cout << "Error! " << endl;
+		return 1;
+	}
 
 	pinMode(Trig, OUTPUT);
 	digitalWrite(Trig, LOW);
